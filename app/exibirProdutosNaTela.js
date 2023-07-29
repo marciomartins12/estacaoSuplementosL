@@ -25,9 +25,9 @@ function exibirItensNaTela(Produtos) {
                 <h3 class="subtitulo-produto">${elemento.subtitulo}</h3>
                 <p class="descricao">${elemento.descricao}</p>
                 </div>
-                </label>
                 
                 </div>
+                </label>
                 <input id="idInput${elemento.id}" class="input" type="checkbox">
             <div class="div-preco-produto2">
                 <span class="preco-produto2">R$${elemento.preco}</span>
