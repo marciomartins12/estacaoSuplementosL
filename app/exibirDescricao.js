@@ -8,7 +8,7 @@ elemento.addEventListener("change", (elemento)=>{
     const botoesComprar = elemento.target.parentElement.parentElement.parentElement.querySelectorAll(".div-preco-produto2");
     const botoesComprar2 = elemento.target.parentElement.parentElement.parentElement.parentElement.querySelectorAll(".div-preco-produto");
     const botaoVoltar = elemento.target.parentElement.parentElement.parentElement.parentElement.querySelector(".botao-fechar");
-    console.log(botoesComprar)
+
     campoFixed.classList.toggle("displayFixo");
     descricaoParagrafoItem.classList.toggle("descricao-produto");
     botaoVoltar.classList.toggle("displayON")
@@ -19,7 +19,7 @@ elemento.addEventListener("change", (elemento)=>{
 
 
     botoesComprar.forEach((botoesComprar)=>{
-        botoesComprar.classList.toggle("displayON")
+        botoesComprar.classList.toggle("div-preco-produto2ON")
     })
 })})}
 export default inputExibir

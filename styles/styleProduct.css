@@ -51,6 +51,9 @@ body {
 .input {
     display: none;
 }
+.input2 {
+    display: none;
+}
 
 .div-preco-produto {
     gap: 1em;
@@ -64,14 +67,15 @@ body {
 }
 
 .div-preco-produto2 {
-    gap: 1em;
     display: none;
-    grid-template-columns: 50% 50%;
-    text-align: center;
-    margin-top: 1em;
-    position: relative;
+    
+    
+}
+.div-preco-produto2ON {
+    display: flex;
     align-items: center;
     gap: 1em;
+    text-align: center; 
 }
 
 .preco-produto {
@@ -92,25 +96,7 @@ body {
     color: black;
     background-color: yellow;
 }
-.botao-adicionar2{
-    margin-left: 1em;
-    width:4.5em ;
-    height:4.5em ;
-}
-.botao-adicionar:active {
-    transition: 0.033s;
-    background-color: #056b16;
-    box-shadow: #056b16 0px 7px 29px 0px;
-    padding: 0.33em;
-    border-radius: 1em;
-}
-.botao-adicionar2:active {
-    transition: 0.033s;
-    background-color: #056b16;
-    box-shadow: #056b16 0px 7px 29px 0px;
-    padding: 0.33em;
-    border-radius: 1em;
-}
+
 
 .descricao {
     display: none;
@@ -135,7 +121,6 @@ body {
 }
 
 .botao-fechar {
-    
     align-items: center;
     position: fixed;
     top: 50%;
@@ -182,4 +167,41 @@ body {
     color: white;
     top: 90%;
     left: 75%;
+}
+.teste{
+    color:white;
+    background-image: url("../icons/cart4.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+}
+.botao{
+    font-size: 3em;
+}
+
+.botao2{
+    display: none;
+    font-size: 3em;
+    color: red;
+    animation: shake 0.8s 0.25s;
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-5px) rotate(-5deg); }
+    20% { transform: translateX(5px) rotate(5deg); }
+    30% { transform: translateX(-5px) rotate(-5deg); }
+    40% { transform: translateX(5px) rotate(5deg); }
+    50% { transform: translateX(-5px) rotate(-5deg); }
+    60% { transform: translateX(5px) rotate(5deg); }
+    70% { transform: translateX(-5px) rotate(-5deg); }
+    80% { transform: translateX(5px) rotate(5deg); }
+    90% { transform: translateX(-5px) rotate(-5deg); }
+    100% { transform: translateX(0); }
+}
+.botaoNone{
+    display: none;
+}
+.botaoOn{
+    display: block;
 }
