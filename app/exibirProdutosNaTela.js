@@ -45,8 +45,9 @@ function exibirItensNaTela(Produtos) {
                     <label for="idInput2${elemento.id}">
                     <div>
                     <i value="${elemento.id}"
-                    class="botao bi bi-cart-plus"></i>        
-                    <i class="botao2 bi bi-cart-x"></i>
+                    class="botao bi bi-cart-plus"></i> 
+                           
+                    <i class="botao2 bi bi-cart-check"></i>
                     </label>
                     </div>
                     </label>

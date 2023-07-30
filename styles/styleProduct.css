@@ -183,10 +183,10 @@ body {
 .botao2{
     display: none;
     font-size: 3em;
-    color: red;
-    animation: shake 0.8s 0.25s;
+    color: green;
+    animation: moviment 0.8s 0.15s;
 }
-@keyframes shake {
+@keyframes moviment {
     0% { transform: translateX(0); }
     10% { transform: translateX(-5px) rotate(-5deg); }
     20% { transform: translateX(5px) rotate(5deg); }
@@ -204,4 +204,32 @@ body {
 }
 .botaoOn{
     display: block;
+}
+.ponto-vermelho{
+    display: none;
+    font-size: 2em;
+   left: 93%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    background-color: rgba(19, 113, 3, 0.826);
+    color: #fff;
+    padding: 0.25em;
+    z-index: 9999;
+    border-radius: 1em;
+}
+.ponto-vermelhoOn{
+    display: block;
+}
+.carrinho-de-compras{
+    width: 60%;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.826);
+    color: #fff;
+    padding: 2em;
+    z-index: 9999;
+    border-radius: 1em;
 }
