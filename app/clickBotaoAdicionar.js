@@ -22,7 +22,7 @@ localStorage.setItem("produtoId", JSON.stringify(itensLocalSorage))
         
     })
 })
-let resultado = ""
+
 botaoPagamento.addEventListener("click",()=>{
     
 window.location.href="./pageCompras.html"
