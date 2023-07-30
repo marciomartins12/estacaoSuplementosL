@@ -34,6 +34,7 @@ botaoPagamento.addEventListener("click",()=>{
             console.log(r.nome)
            })
         })
+window.location.href="./pageCompras.html"
 })
 
 }

@@ -51,6 +51,7 @@ body {
 .input {
     display: none;
 }
+
 .input2 {
     display: none;
 }
@@ -68,14 +69,15 @@ body {
 
 .div-preco-produto2 {
     display: none;
-    
-    
+
+
 }
+
 .div-preco-produto2ON {
     display: flex;
     align-items: center;
     gap: 1em;
-    text-align: center; 
+    text-align: center;
 }
 
 .preco-produto {
@@ -107,10 +109,11 @@ body {
     border-radius: 1em;
     opacity: 88%;
 }
-.div-nome-descricao{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+
+.div-nome-descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .descricao-produto {
@@ -168,47 +171,85 @@ body {
     top: 90%;
     left: 75%;
 }
-.teste{
-    color:white;
+
+.teste {
+    color: white;
     background-image: url("../icons/cart4.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 200px;
     height: 200px;
 }
-.botao{
+
+.botao {
     font-size: 3em;
 }
 
-.botao2{
+.botao2 {
     display: none;
     font-size: 3em;
     color: green;
     animation: moviment 0.8s 0.15s;
 }
+
 @keyframes moviment {
-    0% { transform: translateX(0); }
-    10% { transform: translateX(-5px) rotate(-5deg); }
-    20% { transform: translateX(5px) rotate(5deg); }
-    30% { transform: translateX(-5px) rotate(-5deg); }
-    40% { transform: translateX(5px) rotate(5deg); }
-    50% { transform: translateX(-5px) rotate(-5deg); }
-    60% { transform: translateX(5px) rotate(5deg); }
-    70% { transform: translateX(-5px) rotate(-5deg); }
-    80% { transform: translateX(5px) rotate(5deg); }
-    90% { transform: translateX(-5px) rotate(-5deg); }
-    100% { transform: translateX(0); }
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+
+    20% {
+        transform: translateX(5px) rotate(5deg);
+    }
+
+    30% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+
+    40% {
+        transform: translateX(5px) rotate(5deg);
+    }
+
+    50% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+
+    60% {
+        transform: translateX(5px) rotate(5deg);
+    }
+
+    70% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+
+    80% {
+        transform: translateX(5px) rotate(5deg);
+    }
+
+    90% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
-.botaoNone{
+
+.botaoNone {
     display: none;
 }
-.botaoOn{
+
+.botaoOn {
     display: block;
 }
-.ponto-vermelho{
+
+.ponto-vermelho {
     display: none;
     font-size: 2em;
-   left: 93%;
+    left: 93%;
     position: fixed;
     transform: translate(-50%, -50%);
     background-color: rgba(19, 113, 3, 0.826);
@@ -217,17 +258,20 @@ body {
     z-index: 9999;
     border-radius: 1em;
 }
-.ponto-vermelhoOn{
+
+.ponto-vermelhoOn {
     display: block;
 }
-.carrinho-de-compras{
-    width: 60%;
+
+.carrinho-de-compras {
+    width: 79%;
+    height: 90%;
     align-items: center;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.826);
+    background-color: #000;
     color: #fff;
     padding: 2em;
     z-index: 9999;

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@400;700&family=Source+Code+Pro&display=swap');
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #101010;
+    position: relative;
+    font-family: 'Source Code Pro', monospace;
+}
+.a{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+.botao-voltar-pagina-compras{
+    color: #fff;
+    font-size: 2em;
+    padding: 0.35;
+    background-color: #161814;  
+    border-radius: 0.25em;  
+
+}
+.container-item{
+    display: flex;
+    align-items: center;
+}
+.carrinho-de-compras{
+    color: #fff;
+    
+}
+.item {
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(26, 32, 28, 0.434) 0px 7px 29px 0px;
+    border-radius: 0.55em;
+    margin-top: 0.55em;
+    width: 18em;
+}
+
+.item img {
+    background-color: #242121;
+    width: 8em;
+    height: auto;
+    border-radius: 1em;
+}
+.nome-item{
+    font-size: 2em;
+}
+.preco-item{
+    font-size: 1.2em;
+    position: relative;
+    margin-left: 2em;
+    margin-top: 0.60em;
+    background-color: rgb(119, 119, 23);
+    border-radius: 0.25em;
+    color: #000;
+}
+.nome-preco{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+.enviar-pedido {
+    font-size: 1em;
+    left: 82%;
+    top: 92%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    background-color: rgba(186, 220, 16, 0.826);
+    color: #fff;
+    padding: 0.25em;
+    z-index: 9999;
+    border-radius: 1em;
+}
+.cancelar-item{
+    margin-left: 1em;
+    font-size: 2em;
+    opacity: 88%;
+}
+.storageVazioTexto{
+    margin-top: 3em;
+    color: red;
+}
