@@ -24,16 +24,7 @@ localStorage.setItem("produtoId", JSON.stringify(itensLocalSorage))
 })
 let resultado = ""
 botaoPagamento.addEventListener("click",()=>{
-    let idprodutos = itensLocalSorage
-    idprodutos.forEach((id)=>{
-          resultado = produtos.filter((elemento)=>{
-                return elemento.id == id
-        
-            })
-           resultado.forEach((r)=>{
-            console.log(r.nome)
-           })
-        })
+    
 window.location.href="./pageCompras.html"
 })
 

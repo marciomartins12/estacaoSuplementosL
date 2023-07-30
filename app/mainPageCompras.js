@@ -8,11 +8,9 @@ storage.forEach(element => {
    const itemAdicionar= produtos.filter((produtos)=>{
         return produtos.id == element
     })
-        console.log("a")
         adicionarAoHtml(itemAdicionar)
     });
     }else{
-        console.log("b")
         container.innerHTML+=`<h2 class="storageVazioTexto">Você não possui itens no carrinho.</h2>`
     }
 
