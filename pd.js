@@ -9,22 +9,22 @@ const produtos = [
         classe: "%20%20Carnivoro%20Isolate"
     },
     {
-        nome: "3Whey",
-        subtitulo: "Protein Powder",
-        preco: 90.00,
-        descricao: "A vantagem do 3Whey é que você obtém o melhor dos três mundos em um único produto. Essa combinação de proteínas de diferentes velocidades de absorção garante uma liberação prolongada de aminoácidos, o que contribui para a síntese proteica contínua, recuperação muscular otimizada e suporte ao crescimento muscular.",
-        img: "../img/3whey.png",
-        id: 2,
-        classe: "%203Whey"
-    },
-    {
         nome: "Whey Protein 80%",
         subtitulo: "Growth 1kg",
         preco: 170.00,
         descricao: "Não espere mais para investir em sua performance e resultados. Adquira agora mesmo o Whey Protein 80% e experimente a diferença que esse suplemento de qualidade pode fazer em sua vida. Aproveite todos os benefícios de uma proteína premium, comprovada e confiável. Faça a escolha certa, faça a escolha do Whey Protein 80%!",
         img: "../img/WheyProtein80.png",
-        id: 3,
+        id: 2,
         classe: "%20Whey%20Protein%2080%"
+    },
+    {
+        nome: "3Whey",
+        subtitulo: "Protein Powder",
+        preco: 90.00,
+        descricao: "A vantagem do 3Whey é que você obtém o melhor dos três mundos em um único produto. Essa combinação de proteínas de diferentes velocidades de absorção garante uma liberação prolongada de aminoácidos, o que contribui para a síntese proteica contínua, recuperação muscular otimizada e suporte ao crescimento muscular.",
+        img: "../img/3whey.png",
+        id: 3,
+        classe: "%203Whey"
     },
     {
         nome: "Hiper Mass",

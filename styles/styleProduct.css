@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@400;700&family=Roboto+Condensed:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@400;700&family=REM:wght@400;700&family=Source+Code+Pro&display=swap');
 body {
     display: flex;
     align-items: center;
@@ -7,10 +6,21 @@ body {
     flex-direction: column;
     background-color: #000e02;
     color: #fff;
-    font-family: 'Handjet', cursive;
+    font-family: 'REM', sans-serif;
     font-weight: 700;
     position: relative;
 
+}
+
+.estacao-suplemento{
+    box-shadow: rgb(0, 5, 0) 0px 20px 30px -10px;
+    font-size: 2em;
+    background-color: #000;
+    padding: 1.2em;
+    border-radius: 0 0 1em 1em
+}
+.estacao-suplemento span{
+    color: #0a811e;
 }
 
 .container-produtos {
@@ -70,7 +80,7 @@ body {
     background-color: #000;
     border-radius: 1em;
     box-shadow: rgba(16, 73, 20, 0.646) 0px 10px 50px;
-    
+
 }
 
 .div-preco-produto2 {
@@ -86,7 +96,7 @@ body {
 
 .preco-produto {
     text-align: center;
-    font-size: 1.55em;
+    font-size: 1em;
     padding: 0.25em;
     margin-top: 0.25em;
     border-radius: 0.25em;
@@ -171,9 +181,9 @@ body {
 
 .carrinho-de-itens {
     position: fixed;
-    border: 1px solid green;
+    border:none;
     border-radius: 1em;
-    background-color: #a88d09b3;
+    background-color: #299800fa;
     color: white;
     top: 90%;
     left: 75%;
@@ -260,7 +270,7 @@ body {
     left: 93%;
     position: fixed;
     transform: translate(-50%, -50%);
-    background-color: rgba(19, 113, 3, 0.826);
+    background-color: rgba(255, 255, 0, 0.489);
     color: #fff;
     padding: 0.25em;
     z-index: 9999;

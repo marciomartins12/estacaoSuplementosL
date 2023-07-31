@@ -13,7 +13,7 @@ if (storage) {
         valorTotal(itemAdicionar)
     });
 } else {
-    container.innerHTML += `<h2 class="storageVazioTexto">Você não possui itens no carrinho.</h2>`
+    container.innerHTML += `<h2 class="storageVazioTexto">Você não possui itens no carrinho <i class="bi bi-exclamation-octagon"></i></h2>`
 }
 
 
@@ -27,11 +27,12 @@ function adicionarAoHtml(item) {
             
             <div class="nome-preco">
             <h3 class="nome-item">${elemento.nome}</h3>
-            <p class="preco-item">R$ ${elemento.preco}</p>
+            <p class="preco-item">R$ ${elemento.preco}.00</p>
             </div>
             
             </div>
-            <i id="${elemento.id}" class="cancelar-item bi bi-backspace"></i>
+            <i id="${elemento.id}" class="cancelar-item bi bi-x-square"></i>
+            
             </div>`
     })
 
@@ -77,7 +78,7 @@ botaoEnviar.addEventListener("click", ()=>{
          enviarWhatsapp(res)
     }else{
         const aa = document.querySelector(".local-valor");
-        aa.innerHTML=`<h2 class="storageVazioTexto">Você não possui itens no carrinho.</h2>`
+        aa.innerHTML=`<h2 class="storageVazioTexto">Você não possui itens no carrinho<i class="bi bi-exclamation-octagon"></i>.</h2>`
         console.log(aa)
         
     }
