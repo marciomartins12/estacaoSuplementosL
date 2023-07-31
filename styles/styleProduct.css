@@ -28,11 +28,12 @@ body {
 
 .produto {
     position: relative;
-    margin-top: 1em;
+    margin-top: 2em;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 1em;
     box-shadow: rgba(19, 190, 31, 0.1) 0px 10px 50px;
 }
 
@@ -57,20 +58,23 @@ body {
 }
 
 .div-preco-produto {
-    gap: 1em;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
     text-align: center;
-    margin-top: 0.8em;
+    margin-top: 0.15em;
+    padding-top: 0.35em;
+    margin-bottom: 1em;
     position: relative;
     align-items: center;
-
+    border-bottom: 1em solid black;
+    background-color: #000;
+    border-radius: 1em;
+    box-shadow: rgba(16, 73, 20, 0.646) 0px 10px 50px;
+    
 }
 
 .div-preco-produto2 {
     display: none;
-
-
 }
 
 .div-preco-produto2ON {
@@ -84,9 +88,10 @@ body {
     text-align: center;
     font-size: 1.55em;
     padding: 0.25em;
+    margin-top: 0.25em;
     border-radius: 0.25em;
     color: black;
-    margin-left: 0.45em;
+    margin-left: 1em;
     background-color: yellow;
 }
 
@@ -184,7 +189,8 @@ body {
 }
 
 .botao {
-    font-size: 3em;
+    font-size: 2.25em;
+    margin-right: 0.25em;
 }
 
 .botao2 {

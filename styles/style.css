@@ -1,49 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@400;700&display=swap');body{
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@400;700&display=swap');
+
+body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 16px;
-    background-color: #000;
+    background-color: #030000;
     font-family: 'Handjet', cursive;
-   font-weight: 700;
+    font-weight: 700;
+    position: relative;
 }
-.container{
-      
+
+
+
+.container {
+
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    
+
 }
-.logo{
+
+.logo {
+    margin-top: 1em;
+    margin-bottom: 2.45em;
+    border-radius: 100%;
+    background-color: #000;
     width: auto;
-    height: 18em;
-    
-    background-size: contain;
-    background-repeat:no-repeat;
-    
+    height: 15em;
+    box-shadow: rgba(17, 46, 18, 0.15) 0px 48px 100px 0px;
 }
-.icon-{
-    width: 4em;
+
+.icon- {
+    width: 3.5em;
     height: auto;
 }
-.links{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;    padding: 1em;
+
+.links {
+    padding: 0 1em 1em 1em;
     border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.container a{
+
+.container a {  
     text-decoration: none;
+    box-shadow: rgb(14, 25, 15) 0px 48px 100px 0px;
     color: #beb9b9;
     display: grid;
-    grid-template-columns: 50% 40%;
+    grid-template-columns: 20% 80%;
     align-items: center;
     text-align: center;
-    padding: 1.45em;
+    padding: 1em 1.45em 1.45em 1em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    width: 100%;
 }
-.texto-link{
+
+.texto-link {
     font-size: 1.5em;
+    
 }
-.footer{
+
+.footer {
     color: white;
     font-size: 0.65em;
-    margin-top: 5em;
+    margin-top: 2em;
 }

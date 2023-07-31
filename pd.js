@@ -24,7 +24,7 @@ const produtos = [
         descricao: "Não espere mais para investir em sua performance e resultados. Adquira agora mesmo o Whey Protein 80% e experimente a diferença que esse suplemento de qualidade pode fazer em sua vida. Aproveite todos os benefícios de uma proteína premium, comprovada e confiável. Faça a escolha certa, faça a escolha do Whey Protein 80%!",
         img: "../img/WheyProtein80.png",
         id: 3,
-        classe: "%20Whey%20Protein%2080%%"
+        classe: "%20Whey%20Protein%2080%"
     },
     {
         nome: "Hiper Mass",
