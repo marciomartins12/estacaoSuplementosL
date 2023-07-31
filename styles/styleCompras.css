@@ -3,9 +3,24 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #101010;
     position: relative;
     font-family: 'Source Code Pro', monospace;
+    background-color: rgba(0, 0, 0, 0.989);   
+    
+}
+.b{
+    border: 1px solid black;
+    position: absolute;
+    background-image: url("../img/logo1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: rgba(19, 190, 31, 0.1) 0px 10px 50px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10em;
+    background-size: cover;
+    top: 0.55em;
+    width: 5em;
+    height: 5em;
 }
 .a{
     margin-top: 1.5em;
@@ -13,10 +28,11 @@ body{
     margin-left: 1em;
 }
 .botao-voltar-pagina-compras{
-    color: #fff;
+    color: #c0a7a7;
     font-size: 2em;
     padding: 0.35;
-    background-color: #161814;  
+    background-color: #0a0a0915; 
+    box-shadow: rgba(19, 190, 31, 0.1) 0px 10px 50px;
     border-radius: 0.25em;  
 
 }
@@ -33,7 +49,7 @@ body{
 .item {
     display: flex;
     align-items: center;
-    box-shadow: rgba(26, 32, 28, 0.434) 0px 7px 29px 0px;
+    box-shadow: rgba(19, 190, 31, 0.1) 0px 10px 50px;
     border-radius: 0.55em;
     margin-top: 0.80em;
     width: 20em;
@@ -41,7 +57,7 @@ body{
 }
 
 .item img {
-    background-color: #242121;
+    background-color: #24212139;
     width: 7em;
     height: auto;
     border-radius: 1em;
@@ -52,11 +68,12 @@ body{
 }
 .preco-item{
     font-size: 1.2em;
-    position: relative;
     margin-top: 0.60em;
     background-color: rgb(119, 119, 23);
     border-radius: 0.25em;
     color: #000;
+    margin-left: 4em;
+    margin-top: 0.45em;
 }
 .nome-preco{
     width: 100%;

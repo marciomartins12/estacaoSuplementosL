@@ -2,7 +2,6 @@ import produtos from "../pd.js";
 const container = document.querySelector(".carrinho-de-compras");
 const storage = JSON.parse(localStorage.getItem("produtoId"));
 let valor = 0
-let valor2 = 0;
 console.log(storage)
 
 if (storage) {
@@ -44,9 +43,9 @@ function adicionarAoHtml(item) {
             const resultado = getItem.filter((a) => {
                 return a != item.id
             })
-            location.reload()
             localStorage.setItem("produtoId", JSON.stringify(resultado))
-           
+            window.location.reload();
+            vericaTemElemento();
         })
     })
 }
@@ -61,3 +60,6 @@ function valorTotal(item) {
     localValor.innerHTML = `<span class="valor-total">R$${valor}.00</span>`
 }
 
+function vericaTemElemento(){
+
+}
