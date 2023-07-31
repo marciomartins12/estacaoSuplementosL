@@ -40,13 +40,14 @@ function adicionarAoHtml(item) {
         const getItem = JSON.parse(localStorage.getItem("produtoId"))
         item.addEventListener("click", () => {
             item.parentNode.remove();
+           window.location.reload();
             const resultado = getItem.filter((a) => {
                 return a != item.id
             })
             localStorage.setItem("produtoId", JSON.stringify(resultado))
-            window.location.reload();
-            vericaTemElemento();
+            
         })
+
     })
 }
 
@@ -60,6 +61,42 @@ function valorTotal(item) {
     localValor.innerHTML = `<span class="valor-total">R$${valor}.00</span>`
 }
 
-function vericaTemElemento(){
+const botaoEnviar = document.querySelector(".enviar-pedido");
+botaoEnviar.addEventListener("click", ()=>{
+
+    const getLocalStorage = JSON.parse(localStorage.getItem("produtoId"));
+   
+    if(getLocalStorage.length){
+        let conteudo = ''
+        
+        let res = [];
+        getLocalStorage.forEach((element)=>{
+            conteudo = produtos.filter((elemento)=>element== elemento.id);
+            res.push(...conteudo)
+        })
+         enviarWhatsapp(res)
+    }else{
+        const aa = document.querySelector(".local-valor");
+        aa.innerHTML=`<h2 class="storageVazioTexto">Você não possui itens no carrinho.</h2>`
+        console.log(aa)
+        
+    }
+})
+let textoPadrao = "https://api.whatsapp.com/send?phone=5598986279371&text=Ol%C3%A1,%20vim%20pelo%20Site%20e%20gostaria%20de%20comprar%20o%20"
+let totalget = 0;
+let totalValue = 0;
+let valorFinalColocarWhats = "";
+function enviarWhatsapp(lista){
+    totalget = lista.map((lista)=>lista.preco);
+    totalget.forEach((item)=>{
+        totalValue+=item
+    })
+    valorFinalColocarWhats=`.%20Com%20valor%20total%20R$${totalValue}.00`
+    console.log(totalValue)
+    const classesWhats = lista.map((item)=>item.classe);
+    textoPadrao+=classesWhats
+    textoPadrao+=valorFinalColocarWhats
+    console.log(textoPadrao)
+    window.location.href=`${textoPadrao}`
 
 }
