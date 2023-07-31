@@ -5,23 +5,23 @@ let valor = 0
 let valor2 = 0;
 console.log(storage)
 
-if(storage){
+if (storage) {
     storage.forEach(element => {
-        const itemAdicionar= produtos.filter((produtos)=>{
+        const itemAdicionar = produtos.filter((produtos) => {
             return produtos.id == element
         })
         adicionarAoHtml(itemAdicionar)
         valorTotal(itemAdicionar)
     });
-}else{
-    container.innerHTML+=`<h2 class="storageVazioTexto">Você não possui itens no carrinho.</h2>`
+} else {
+    container.innerHTML += `<h2 class="storageVazioTexto">Você não possui itens no carrinho.</h2>`
 }
 
 
 
-    function adicionarAoHtml(item){
-        item.forEach((elemento)=>{
-            container.innerHTML+=`
+function adicionarAoHtml(item) {
+    item.forEach((elemento) => {
+        container.innerHTML += `
             <div class="container-item">
             <div class="item">
             <img src="${elemento.img}" alt="foto">
@@ -32,40 +32,32 @@ if(storage){
             </div>
             
             </div>
-            <i class="cancelar-item bi bi-backspace"></i>
+            <i id="${elemento.id}" class="cancelar-item bi bi-backspace"></i>
             </div>`
+    })
+
+    const botaoExcluirItem = document.querySelectorAll(".cancelar-item")
+    botaoExcluirItem.forEach((item) => {
+        const getItem = JSON.parse(localStorage.getItem("produtoId"))
+        item.addEventListener("click", () => {
+            item.parentNode.remove();
+            const resultado = getItem.filter((a) => {
+                return a != item.id
+            })
+            location.reload()
+            localStorage.setItem("produtoId", JSON.stringify(resultado))
+           
         })
-        const botaoExcluirItem = document.querySelectorAll(".cancelar-item")
-        botaoExcluirItem.forEach((item)=>{
-            item.addEventListener("click", ()=>{
-                let result = []
-                item.parentNode.remove();
-                const containerP2 = document.querySelector(".carrinho-de-compras");
-                const atualizaValor = containerP2.querySelectorAll(".nome-item");
-                atualizaValor.forEach((e)=>{
-                    result = e.textContent
-                    console.log(result)
-                    
-                    const nomeDeQuemVaiVoltar =  produtos.filter((i)=>{
-                        return i.nome == result
-                     })
-                     atualizarPreco(nomeDeQuemVaiVoltar)
-                 })
-                })
-        })
-    }
-    function valorTotal(item){
-        const localValor = document.querySelector(".local-valor");
-        item.forEach((itens)=>{
-            valor +=  itens.preco
-        })
-        localValor.innerHTML=`<span class="valor-total">R$${valor}.00</span>`
-    }
-    
-    function atualizarPreco(item){
-           item.forEach((itens)=>{
-            console.log(itens)
-            valor2 +=  itens.preco
-        })
-        document.querySelector(".local-valor").innerHTML=`<span class="valor-total">R$${valor}.00</span>`
-    }
+    })
+}
+
+
+
+function valorTotal(item) {
+    const localValor = document.querySelector(".local-valor");
+    item.forEach((itens) => {
+        valor += itens.preco
+    })
+    localValor.innerHTML = `<span class="valor-total">R$${valor}.00</span>`
+}
+
