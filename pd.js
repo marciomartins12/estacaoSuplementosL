@@ -49,7 +49,7 @@ const produtos = [
         subtitulo: "250g",
         preco: 150.00,
         descricao: "Invista agora mesmo na Creatina Growth e desfrute dos benefícios comprovados que ela pode oferecer. Prepare-se para elevar seus treinos a um novo patamar, aumentar sua força e potência muscular, e alcançar resultados surpreendentes em sua jornada fitness. Faça a escolha inteligente, faça a escolha da Creatina Growth!",
-        img: "../img/HiperMass.png",
+        img: "../img/growth creatina.png",
         id: 6,
         classe: "%20Creatina%20Growth"
     },
@@ -58,7 +58,7 @@ const produtos = [
         subtitulo: "Black Skull",
         preco: 140.00,
         descricao: "Prepare-se para experimentar uma explosão muscular e um desempenho máximo com a Creatina Turbo Black Skull. Aumente sua força, potência e resistência, supere seus objetivos e alcance resultados extraordinários.",
-        img: "../img/HiperMass.png",
+        img: "../img/creatina300.png",
         id: 7,
         classe: "%20Creatina%20300g%20Black%20Skull"
     },
@@ -67,7 +67,7 @@ const produtos = [
         subtitulo: "Black Skull",
         preco: 85.00,
         descricao: "Prepare-se para experimentar uma explosão muscular e um desempenho máximo com a Creatina Turbo Black Skull. Aumente sua força, potência e resistência, supere seus objetivos e alcance resultados extraordinários.",
-        img: "../img/HiperMass.png",
+        img: "../img/creatina150.png",
         id: 8,
         classe: "%20Creatina%20150g%20Black%20Skull"
     },
@@ -76,7 +76,7 @@ const produtos = [
         subtitulo: "Max Titanium 150g",
         preco: 75.00,
         descricao: "Invista no Bio Colágeno e promova a saúde da sua pele, articulações e cabelos. Desfrute dos benefícios de uma pele radiante, articulações mais saudáveis e cabelos fortalecidos. Faça a escolha consciente, faça a escolha do Bio Colágeno para uma aparência e um bem-estar excepcionais!",
-        img: "../img/HiperMass.png",
+        img: "../img/bioColagen.png",
         id: 9,
         classe: "%20Bio%20Colagen"
     },
@@ -85,7 +85,7 @@ const produtos = [
         subtitulo: "Pré-treino",
         preco: 75.00,
         descricao: "Prepare-se para experimentar uma explosão de energia, foco aprimorado e desempenho máximo com o Pré-Treino Nuclear Rush. Elevar seus treinos a um novo patamar, superar seus limites e alcançar resultados impressionantes. Faça a escolha poderosa, faça a escolha do Pré-Treino Nuclear Rush para um treino verdadeiramente explosivo!",
-        img: "../img/HiperMass.png",
+        img: "../img/nuclearRush.png",
         id: 10,
         classe: "%20Nuclar%20Rush"
     },
@@ -94,7 +94,7 @@ const produtos = [
         subtitulo: "Chocolate Branco",
         preco: 90.00,
         descricao: "Escolha a Pasta de Amendoim Laganexa e desfrute de um alimento versátil, saboroso e nutritivo. Com sua textura cremosa e sabor irresistível, ela vai conquistar seu paladar e se tornar um ingrediente essencial em sua dieta. Faça a escolha saudável, faça a escolha da Pasta de Amendoim Laganexa para um deleite nutritivo e delicioso!",
-        img: "../img/HiperMass.png",
+        img: "../img/chocolateBranco.png",
         id: 11,
         classe: "%20Pasta%20de%20Amendoim%20sabor%20chocolate%20branco"
     },
@@ -103,7 +103,7 @@ const produtos = [
         subtitulo: "Leitinho com Chocolate",
         preco: 90.00,
         descricao: "scolha a Pasta de Amendoim Laganexa,possui whey protein em sua composição e desfrute de um alimento versátil, saboroso e nutritivo. Com sua textura cremosa e sabor irresistível, ela vai conquistar seu paladar e se tornar um ingrediente essencial em sua dieta. Faça a escolha saudável, faça a escolha da Pasta de Amendoim Laganexa para um deleite nutritivo e delicioso!",
-        img: "../img/HiperMass.png",
+        img: "../img/leitinho.png",
         id: 12,
         classe: "%20Pasta%20de%20Amendoim%20%20sabor%20leitinho%20com%20chocolate"
     },
@@ -112,7 +112,7 @@ const produtos = [
         subtitulo: "Castanha de Cajú",
         preco: 90.00,
         descricao: "A Pasta de Amendoim Alaganexa Sabor Doce de Leite com Castanha de Caju é uma opção deliciosa e indulgente para os amantes de sabores doces. Combinando o sabor suave do doce de leite com o crocante das castanhas de caju, essa pasta é uma verdadeira tentação para os sentidos.",
-        img: "../img/HiperMass.png",
+        img: "../img/caju.png",
         id: 13,
         classe: "%20Pasta%20de%20Amendoim%20sabor%20castanha%20de%20caju"
     },
@@ -121,7 +121,7 @@ const produtos = [
         subtitulo: "Avelã ZERO Lactose",
         preco: 80.00,
         descricao: "A Pasta de Amendoim Alaganexa Sabor Avelã é uma opção deliciosa e indulgente para os amantes de sabores doces. Essa pasta é uma verdadeira tentação para os sentidos.",
-        img: "../img/HiperMass.png",
+        img: "../img/avela.png",
         id: 14,
         classe: "%20Pasta%20de%20Amendoim%20sabor%20avelã%20"
     },
@@ -130,7 +130,7 @@ const produtos = [
         subtitulo: "Bater Suplementação",
         preco: 25.00,
         descricao: "Para melhor bater sua suplementação.",
-        img: "../img/HiperMass.png",
+        img: "../img/coqueteleira.png",
         id: 15,
         classe: "%20Coqueteleira"
     },
