@@ -92,7 +92,7 @@ const produtos = [
     {
         nome: "Pasta de Amendoim",
         subtitulo: "Chocolate Branco",
-        preco: 90.00,
+        preco: 80.00,
         descricao: "Escolha a Pasta de Amendoim Laganexa e desfrute de um alimento versátil, saboroso e nutritivo. Com sua textura cremosa e sabor irresistível, ela vai conquistar seu paladar e se tornar um ingrediente essencial em sua dieta. Faça a escolha saudável, faça a escolha da Pasta de Amendoim Laganexa para um deleite nutritivo e delicioso!",
         img: "../img/chocolateBranco.png",
         id: 11,
@@ -101,7 +101,7 @@ const produtos = [
     {
         nome: "Pasta de Amendoim",
         subtitulo: "Leitinho com Chocolate",
-        preco: 90.00,
+        preco: 80.00,
         descricao: "scolha a Pasta de Amendoim Laganexa,possui whey protein em sua composição e desfrute de um alimento versátil, saboroso e nutritivo. Com sua textura cremosa e sabor irresistível, ela vai conquistar seu paladar e se tornar um ingrediente essencial em sua dieta. Faça a escolha saudável, faça a escolha da Pasta de Amendoim Laganexa para um deleite nutritivo e delicioso!",
         img: "../img/leitinho.png",
         id: 12,
@@ -110,7 +110,7 @@ const produtos = [
     {
         nome: "Pasta de Amendoim",
         subtitulo: "Castanha de Cajú",
-        preco: 90.00,
+        preco: 80.00,
         descricao: "A Pasta de Amendoim Alaganexa Sabor Doce de Leite com Castanha de Caju é uma opção deliciosa e indulgente para os amantes de sabores doces. Combinando o sabor suave do doce de leite com o crocante das castanhas de caju, essa pasta é uma verdadeira tentação para os sentidos.",
         img: "../img/caju.png",
         id: 13,
