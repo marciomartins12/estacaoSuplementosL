@@ -72,13 +72,13 @@ const produtos = [
         classe: "%20Creatina%20150g%20Black%20Skull"
     },
     {
-        nome: "Bio Colagen",
-        subtitulo: "Max Titanium 150g",
-        preco: 75.00,
-        descricao: "Invista no Bio Colágeno e promova a saúde da sua pele, articulações e cabelos. Desfrute dos benefícios de uma pele radiante, articulações mais saudáveis e cabelos fortalecidos. Faça a escolha consciente, faça a escolha do Bio Colágeno para uma aparência e um bem-estar excepcionais!",
-        img: "../img/bioColagen.png",
+        nome: "Colageno Hidrolisado",
+        subtitulo: "Max Titanium",
+        preco: 60.00,
+        descricao: "Além dos benefícios estéticos, o Colágeno Hidrolisado da Max Titanium também é uma excelente opção para quem sofre com dores articulares e problemas nas articulações. A suplementação regular ajuda a melhorar a lubrificação e a flexibilidade das articulações, proporcionando maior conforto e mobilidade para as atividades diárias.",
+        img: "../img/colagenHidrolisado.png",
         id: 9,
-        classe: "%20Bio%20Colagen"
+        classe: "%20Colagen%20Hidrolisado"
     },
     {
         nome: "Nuclear Rush",
