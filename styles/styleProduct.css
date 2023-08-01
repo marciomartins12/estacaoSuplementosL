@@ -38,7 +38,7 @@ body {
 
 .produto {
     position: relative;
-    margin-top: 2em;
+    margin-top: 1em;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -76,8 +76,9 @@ body {
     margin-bottom: 1em;
     position: relative;
     align-items: center;
-    border-bottom: 1em solid black;
-    background-color: #000;
+    border: none;
+    border-bottom: 1em solid #1a15159d;
+    background-color: #1a15159d;
     border-radius: 1em;
     box-shadow: rgba(16, 73, 20, 0.646) 0px 10px 50px;
 
@@ -270,8 +271,8 @@ body {
     left: 93%;
     position: fixed;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 0, 0.489);
-    color: #fff;
+    background-color: rgba(255, 255, 0, 0.961);
+    color: #070000;
     padding: 0.25em;
     z-index: 9999;
     border-radius: 1em;
