@@ -1,57 +1,24 @@
 import produtos from "../pd.js";
+import clickBotaoExcluir from "./eventodeclickBotaoNaPaginaDeCompraParaExcluir.js";
+import adicionarAoHtml from "./exibirProdutoNaPaginaDoCarrinhoDeCompras.js";
 const container = document.querySelector(".carrinho-de-compras");
 const storage = JSON.parse(localStorage.getItem("produtoId"));
 let valor = 0
-console.log(storage)
 
 if (storage) {
     storage.forEach(element => {
         const itemAdicionar = produtos.filter((produtos) => {
             return produtos.id == element
         })
-        adicionarAoHtml(itemAdicionar);
+        adicionarAoHtml(itemAdicionar, container);
         valorTotal(itemAdicionar);
     });
 } else {
     container.innerHTML += `<h2 class="storageVazioTexto">Você não possui itens no carrinho <i class="bi bi-exclamation-octagon"></i></h2>`
-}
-
-
-
-function adicionarAoHtml(item) {
-    item.forEach((elemento) => {
-        container.innerHTML += `
-        <div class="container-item">
-        <div class="item">
-        <img src="${elemento.img}" alt="foto">
-        
-        <div class="nome-preco">
-        <h3 class="nome-item">${elemento.nome}</h3>
-        <p class="preco-item">R$ ${elemento.preco}.00</p>
-        </div>
-        
-        </div>
-        <i id="${elemento.id}" class="cancelar-item bi bi-x-square"></i>
-        
-        </div>`
-    })
-    
+} 
     const botaoExcluirItem = document.querySelectorAll(".cancelar-item")
-    botaoExcluirItem.forEach((item) => {
-        const getItem = JSON.parse(localStorage.getItem("produtoId"));
-        item.addEventListener("click", () => {
-            window.location.reload();
-            item.parentNode.remove();
-            
-            const resultado = getItem.filter((a) => {
-                return a != item.id
-            })
-            localStorage.setItem("produtoId", JSON.stringify(resultado))
-            
-        })
-        
-    })
-}
+ clickBotaoExcluir(botaoExcluirItem)
+
 
 
 
