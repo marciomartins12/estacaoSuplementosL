@@ -1,10 +1,10 @@
-import produtos from "../pd.js";
 function enviarParaoWatsapp(botaoEnviarPedidoParaOwhatsapp){
     
 botaoEnviarPedidoParaOwhatsapp.addEventListener("click", () => {
+
     const getLocalStorage = JSON.parse(localStorage.getItem("produtoId"));
 
-    if (getLocalStorage && getLocalStorage.length){
+    if (getLocalStorage && getLocalStorage.length) {
         let conteudo = ''
 
         let variavelQueRecebeOIdDoElementoQueFoiColocadoNoLocalStorage = [];

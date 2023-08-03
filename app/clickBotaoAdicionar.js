@@ -1,6 +1,5 @@
 
 const itensLocalSorage = JSON.parse(localStorage.getItem("produtoId"))||[];
-console.log(itensLocalSorage)
 function botaoComprar(){
 const TodosBotoesClicar = document.querySelectorAll(".input2");
 const botaoPagamento = document.querySelector(".carrinho-de-itens")
@@ -17,9 +16,9 @@ TodosBotoesClicar.forEach((btn)=>{
         iconCompraAdd.classList.add("ponto-vermelhoOn")
         botao.classList.add("displayNone");
 
-        itensLocalSorage.push(botao.getAttribute("value"));
-        localStorage.setItem("produtoId", JSON.stringify(itensLocalSorage))
 
+itensLocalSorage.push(botao.getAttribute("value"));
+localStorage.setItem("produtoId", JSON.stringify(itensLocalSorage))
         
     })
 })
