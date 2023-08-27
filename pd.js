@@ -85,7 +85,7 @@ const produtos = [
         subtitulo: " 100% pura",
         preco: 110.00,
         descricao: "Mais energia para as células dos músculos, diminui a fadiga e ajuda na recuperação muscular, aumenta a força durante os treinos  e contribui para o aumento de massa muscular",
-        img: "../img/Creatina Max Titanium 150g.png",
+        img: "../img/Creatina Black skull 100% pura.png",
         id: 16,
         classe: "%20Creatina%20Max%20Black%20Skull%20100%%20pura"
     },
