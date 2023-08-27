@@ -83,7 +83,7 @@ const produtos = [
     {
         nome: "Creatina Black skull",
         subtitulo: " 100% pura",
-        preco: 110.00,
+        preco: 100.00,
         descricao: "Mais energia para as células dos músculos, diminui a fadiga e ajuda na recuperação muscular, aumenta a força durante os treinos  e contribui para o aumento de massa muscular",
         img: "../img/Creatina Black skull.png",
         id: 16,
