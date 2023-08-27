@@ -134,6 +134,15 @@ const produtos = [
         id: 15,
         classe: "%20Coqueteleira"
     },
-
+    {
+        nome: "Creatina Max",
+        subtitulo: "Titanium 150g",
+        preco: 110.00,
+        descricao: "Para melhor bater sua suplementação.",
+        img: "../img/Creatina Max Titanium 150g.png",
+        id: 16,
+        classe: "%20Creatina Max Titanium 150g"
+    },
+    
 ]
 export default produtos
